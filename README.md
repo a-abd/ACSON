@@ -1,5 +1,5 @@
 # ACSON
-A MATLAB pipeline for an automated 3D segmentation and morphometry of myelinated axons in white matter. 
+A MATLAB pipeline for automated 3D segmentation and morphometry of myelinated axons. 
 
 
 Reference:
