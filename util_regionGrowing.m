@@ -1,5 +1,22 @@
 function [inxCollection,flag] = util_regionGrowing(I,ini_inx,t_dist,vol,bound_im,fg)
 
+% Ali Abdollahzadeh 
+% A.I. Virtanen Institute for Molecular Sciences
+% University of Eastern Finland, Finland
+% ali.abdollahzadeh at uef.fi
+% -------------------------------------------------------------
+% The method is described in 
+% Abdollahzadeh, A., Belevich, I., Jokitalo, E., Tohka, J. & Sierra, A. 
+% Automated 3D Axonal Morphometry of WhiteMatter.bioRxiv(2018). DOI 10.1101/239228.
+% --------------------------------------------------------------
+% Permission to use, copy, modify, and distribute this software 
+% for any purpose and without fee is hereby
+% granted, provided that the above copyright notice appear in all
+% copies. The author and University of Eastern Finland make no representations
+% about the suitability of this software for any purpose. It is 
+% provided "as is" without express or implied warranty.
+% -------------------------------------------------------------
+
 [r,c,h] = size(I);
 J = false(r,c,h); J(ini_inx) = 1;
 flag = 0;
